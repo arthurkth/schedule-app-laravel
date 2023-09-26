@@ -18,9 +18,9 @@
 
 4.  Execute as migrações para criar a estrutura do banco de dados com o comando php artisan migrate.
 
-        ```bash
-        php artisan migrate
-        ```
+    ```bash
+    php artisan migrate
+    ```
 
     ### <b>OBS: Se preferir, o arquivo do banco de dados está na pasta do projeto (schedule.sql)</b>
 
