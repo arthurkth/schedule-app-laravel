@@ -1,0 +1,226 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-danger {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+.modal {
+    display: none;
+}
+
+.button__add {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#contactsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#contactsTable th,
+#contactsTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.table__button--edit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+}
+
+.table__button--delete {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: 1px solid #ff6b6b;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #contactsTable th,
+    #contactsTable td {
+        display: block;
+        width: 100%;
+    }
+
+    #contactsTable th {
+        background-color: #f2f2f2;
+    }
+
+    #contactsTable td {
+        margin-bottom: 10px;
+    }
+
+    .table__button--edit,
+    .table__button--delete {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.contact__form {
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__button--close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal__head {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.modal__head__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal__body {
+    text-align: center;
+}
+
+.modal__button--confirm,
+.modal__button--cancel {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal__button--confirm {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal__button--cancel {
+    background-color: #ff6b6b;
+
+    color: #fff;
+}
+
+.back__arrow {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    text-decoration: none;
+    color: #007bff;
+    transition: background 0.2s;
+}
+.back__arrow:hover {
+    color: #0c5099;
+    transition: background 0.2s;
+}
+
+/* Estilos para o container do campo de busca */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Estilos para o campo de busca */
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Estilos para o botão de busca */
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para o botão de busca ao passar o mouse */
+.search-button:hover {
+    background-color: #0056b3;
+}
